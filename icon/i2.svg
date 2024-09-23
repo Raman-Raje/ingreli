@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background -->
+  <rect x="0" y="0" width="100" height="100" rx="20" fill="#6200EA" />
+  
+  <!-- Centered magnifying glass -->
+  <circle cx="50" cy="45" r="30" fill="none" stroke="white" stroke-width="8" />
+  <line x1="72" y1="67" x2="90" y2="85" stroke="white" stroke-width="8" stroke-linecap="round" />
+  
+  <!-- Colored, scattered ingredient dots -->
+  <circle cx="50" cy="45" r="3" fill="#FF5252" /> <!-- Red -->
+  <circle cx="62" cy="35" r="3" fill="#FFEB3B" /> <!-- Yellow -->
+  <circle cx="40" cy="55" r="3" fill="#4CAF50" /> <!-- Green -->
+  <circle cx="45" cy="30" r="3" fill="#2196F3" /> <!-- Blue -->
+  <circle cx="58" cy="52" r="3" fill="#FF9800" /> <!-- Orange -->
+  <circle cx="35" cy="40" r="3" fill="#E91E63" /> <!-- Pink -->
+  <circle cx="55" cy="60" r="3" fill="#9C27B0" /> <!-- Purple -->
+</svg>
