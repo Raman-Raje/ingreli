@@ -1,0 +1,89 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes float {
+  0% { transform: translate(0, 0) rotate(0deg) scale(1); }
+  25% { transform: translate(6px, -10px) rotate(4deg) scale(1.04); }
+  50% { transform: translate(-6px, -6px) rotate(-4deg) scale(1); }
+  75% { transform: translate(5px, 10px) rotate(3deg) scale(1.03); }
+  100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite alternate;
+  transition: transform 0.3s ease;
+}
+
+.animate-float:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+
+/* Target only links inside non-markdown content */
+.back-to-container a, .not-prose a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.back-to-container a:hover, .not-prose a:hover {
+  color: #16a34a; /* Tailwind green-600 */
+}
+
+.footer-container a {
+  color: #d3e5df;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  color: white; /* Tailwind white */
+}
+
+/* Preserve Tailwind styling for other components */
+.prose a {
+  color: #3b82f6; /* Tailwind blue-500 */
+  text-decoration: underline;
+}
+
+/* Highlight markdown links on hover */
+.prose a:hover {
+  color: #1d4ed8; /* Tailwind blue-700 */
+}
+
+.prose p,
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose ul,
+.prose ol,
+.prose li {
+  color: #374151 !important; /* Tailwind gray-700 */
+}
+
+.prose img {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+
+
+
+
+
