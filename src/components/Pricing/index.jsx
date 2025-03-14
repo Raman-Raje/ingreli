@@ -13,7 +13,7 @@ const plans = [
       'Email Support',
     ],
     highlight: false,
-    buttonText: 'Get Started',
+    buttonText: 'Get Basic',
   },
   {
     name: 'Family Plan',
@@ -27,7 +27,7 @@ const plans = [
       'Priority Support',
     ],
     highlight: true,
-    buttonText: 'Most Popular',
+    buttonText: 'Get Family',
   },
   {
     name: 'Premium Plan',
@@ -41,7 +41,7 @@ const plans = [
       '24/7 Priority Support',
     ],
     highlight: false,
-    buttonText: 'Go Premium',
+    buttonText: 'Get Premium',
   },
 ];
 

@@ -27,7 +27,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link href="/blog" className="!text-green-800 hover:!text-green-600">
-              Blog
+              Blogs
             </Link>
           </li>
           <li>
