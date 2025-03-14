@@ -8,7 +8,7 @@ import BlogCTA from "@/components/Blog/BlogCTA";
 import { getBlogPost, getAllPostSlugs } from "@/utils/blogs";
 
 // Generate metadata for SEO
-export async function generateMetadata({ params }) {
+export const generateMetadata = async ({ params }) => {
 
     const { slug } = await params;
     const post = await getBlogPost(slug);
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }) {
     };
 }
 
-export default async function BlogPostPage({ params }) {
+export const BlogPostPage = async ({ params }) => {
     
     const { slug } = await params;
     const post = await getBlogPost(slug);
@@ -45,9 +45,8 @@ export default async function BlogPostPage({ params }) {
     );
 }
 
-export async function generateStaticParams() {
-    // Fetch all available slugs (Ensure `getAllPostSlugs()` returns an array of strings)
+export const generateStaticParams = async () => {
     return getAllPostSlugs().map((slug) => ({
-        slug: String(slug), // Ensure it's a string
+        slug, // Correct format expected by Next.js
     }));
 }

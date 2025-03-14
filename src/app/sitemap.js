@@ -7,7 +7,6 @@ const sitemap = async () => {
     // Static pages
     const staticPages = [
         '', // Home
-        'about-us',
         'blog',
         'privacy-policy',
         'terms-and-conditions'
@@ -19,10 +18,20 @@ const sitemap = async () => {
     // Fetch blog post slugs dynamically
     const blogSlugs = getAllPostSlugs();
 
+    console.log('blogSlugs');
+    console.log(blogSlugs);
+
     const blogPages = blogSlugs.map((slug) => ({
-        url: `${baseUrl}/blog/${slug}`,
+        url: `${baseUrl}/blog/${slug}`, // This will now be correct
         lastModified: new Date().toISOString(),
     }));
+    
+    console.log('blogPages');
+    console.log(blogPages);
+    console.log('staticPages');
+    console.log(staticPages);
+    console.log('combined');
+    console.log([...staticPages, ...blogPages]);
 
     return [...staticPages, ...blogPages];
 }

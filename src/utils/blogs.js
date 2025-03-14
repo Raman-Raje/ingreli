@@ -7,14 +7,8 @@ const postsDirectory = path.join(process.cwd(), 'src', 'content');
 
 export const getAllPostSlugs = () => {
     const fileNames = fs.readdirSync(postsDirectory);
-    return fileNames.map(fileName => {
-        return {
-            params: {
-                slug: fileName.replace(/\.md$/, '')
-            }
-        };
-    });
-}
+    return fileNames.map(fileName => fileName.replace(/\.md$/, '')); // Return just slugs
+};
 
 export const getAllPosts = () => {
     const fileNames = fs.readdirSync(postsDirectory);
