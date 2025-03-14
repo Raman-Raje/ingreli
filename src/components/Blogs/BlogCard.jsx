@@ -31,7 +31,7 @@ const BlogCard = ({ post }) => {
     const { title, slug, category, date, excerpt, readTime } = post;
 
     return (
-        <Link href={`/blog/${post.slug}`} className="group">
+        <Link href={`/blogs/${post.slug}`} className="group">
             <article className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
                 <BlogCardFeaturedImage title={title} slug={slug} />
 

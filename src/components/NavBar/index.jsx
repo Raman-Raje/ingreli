@@ -26,7 +26,7 @@ const Navbar = () => {
             </ScrollLink>
           </li>
           <li>
-            <Link href="/blog" className="!text-green-800 hover:!text-green-600">
+            <Link href="/blogs" className="!text-green-800 hover:!text-green-600">
               Blogs
             </Link>
           </li>
@@ -64,7 +64,7 @@ const Navbar = () => {
                 </ScrollLink>
               </li>
               <li>
-                <Link href="/blog" className=" hover:text-green-600" onClick={() => setIsOpen(false)}>
+                <Link href="/blogs" className=" hover:text-green-600" onClick={() => setIsOpen(false)}>
                   Blogs
                 </Link>
               </li>

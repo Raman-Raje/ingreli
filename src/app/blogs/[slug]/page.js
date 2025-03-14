@@ -26,7 +26,7 @@ export const generateMetadata = async ({ params }) => {
     };
 }
 
-export const BlogPostPage = async ({ params }) => {
+export default async function BlogPostPage({ params }) {
     
     const { slug } = await params;
     const post = await getBlogPost(slug);

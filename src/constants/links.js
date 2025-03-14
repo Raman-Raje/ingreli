@@ -15,5 +15,5 @@ export const connect = [
   ];
 
   export const resources = [
-    { label: 'Blogs', path: '/blog' },
+    { label: 'Blogs', path: '/blogs' },
   ];

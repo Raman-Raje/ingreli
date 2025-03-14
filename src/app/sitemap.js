@@ -7,7 +7,7 @@ const sitemap = async () => {
     // Static pages
     const staticPages = [
         '', // Home
-        'blog',
+        'blogs',
         'privacy-policy',
         'terms-and-conditions'
     ].map((path) => ({
@@ -19,7 +19,7 @@ const sitemap = async () => {
     const blogSlugs = getAllPostSlugs();
 
     const blogPages = blogSlugs.map((slug) => ({
-        url: `${baseUrl}/blog/${slug}`, // This will now be correct
+        url: `${baseUrl}/blogs/${slug}`, // This will now be correct
         lastModified: new Date().toISOString(),
     }));
 
