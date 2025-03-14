@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { contactMail, address } from '@/constants/categories';
 const TermsAndConditions = () => (
   <section className="bg-green-50 py-20 px-6">
     <div className="max-w-4xl mx-auto">
@@ -95,8 +95,8 @@ const TermsAndConditions = () => (
             <>
               <p>For any questions regarding these Terms, please contact us at:</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Email:</strong> contact@ingreli.com</li>
-                <li><strong>Address:</strong> Medahalli, Bengaluru - 560049</li>
+                <li><strong>Email:</strong> {contactMail}</li>
+                <li><strong>Address:</strong> {address}</li>
               </ul>
             </>
           }

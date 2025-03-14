@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { contactMail } from '@/constants/categories';
 import { Menu, X } from 'lucide-react';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  console.log("Navbar");
-  console.log(isOpen);
 
   return (
     <nav className="w-full bg-green-50 py-4">
@@ -16,9 +16,14 @@ const Navbar = () => {
         {/* Navigation Links (Hidden on small screens) */}
         <ul className="hidden md:flex space-x-6">
           <li>
-            <a href="#pricing" className="!text-green-800 hover:!text-green-600">
+            <ScrollLink
+              to="pricing"
+              smooth={true}
+              duration={500} // Smooth scrolling duration
+              className="!text-green-800 hover:!text-green-600"
+            >
               Pricing
-            </a>
+            </ScrollLink>
           </li>
           <li>
             <Link href="/blog" className="!text-green-800 hover:!text-green-600">
@@ -26,7 +31,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <a href="#contact" className="!text-green-800 hover:!text-green-600">
+            <a href={`mailto:${contactMail}`} className="!text-green-800 hover:!text-green-600">
               Contact
             </a>
           </li>
@@ -44,35 +49,37 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-14 left-0 w-full bg-green-50 shadow-md z-10">
-          <ul className="flex flex-col space-y-4 py-4 px-6 text-green-800">
-            <li>
-              <Link href="/" className="font-semibold text-black" onClick={() => setIsOpen(false)}>
-                App
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" className="hover:text-green-600" onClick={() => setIsOpen(false)}>
-                About
-              </Link>
-            </li>
-            <li>
-              <Link href="/articles" className="hover:text-green-600" onClick={() => setIsOpen(false)}>
-                Articles
-              </Link>
-            </li>
-            <li>
-              <Link href="/newsletter" className="hover:text-green-600" onClick={() => setIsOpen(false)}>
-                Newsletter
-              </Link>
-            </li>
-          </ul>
+        <div className='back-to-container'>
+          <div className="md:hidden absolute top-14 left-0 w-full bg-green-50 shadow-md z-10">
+            <ul className="flex flex-col space-y-4 py-4 px-6 text-green-800">
+              <li>
+                <ScrollLink
+                  to="pricing"
+                  smooth={true}
+                  duration={500} // Smooth scrolling duration
+                  className="text-green-800 hover:text-green-600"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Pricing
+                </ScrollLink>
+              </li>
+              <li>
+                <Link href="/blog" className=" hover:text-green-600" onClick={() => setIsOpen(false)}>
+                  Blogs
+                </Link>
+              </li>
+              <li>
+                <a href={`mailto:${contactMail}`} className=" hover:text-green-600" onClick={() => setIsOpen(false)}>
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       )}
     </nav>
   );
 };
-
 
 export default Navbar;
 

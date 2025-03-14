@@ -6,10 +6,7 @@ category: Nutrition
 date: 2024-11-10
 readTime: 5 min read
 slug: understanding-food-labels
-author:
-  name: Raman Shinde
-  role: Nutrition Specialist
-  avatar: ""
+authorId: reja
 ---
 
 Navigating the grocery store aisles can be overwhelming, especially when you're trying to make healthier choices. Food labels are packed with information, but understanding them is key to making informed decisions. Here's a breakdown of what to look for:

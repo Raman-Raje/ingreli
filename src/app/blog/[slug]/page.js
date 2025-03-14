@@ -9,7 +9,9 @@ import { getBlogPost, getAllPostSlugs } from "@/utils/blogs";
 
 // Generate metadata for SEO
 export async function generateMetadata({ params }) {
-    const post = await getBlogPost(params.slug);
+
+    const { slug } = await params;
+    const post = await getBlogPost(slug);
 
     if (!post) {
         return {
@@ -26,9 +28,8 @@ export async function generateMetadata({ params }) {
 
 export default async function BlogPostPage({ params }) {
     
-    const slug = params.slug;
+    const { slug } = await params;
     const post = await getBlogPost(slug);
-
 
     if (!post) notFound();
 
@@ -36,7 +37,7 @@ export default async function BlogPostPage({ params }) {
         <main className="container mx-auto px-4 py-12 max-w-4xl">
             <BackToArticlesButton />
             <BlogHeader post={post} />
-            <BlogAuthor author={post.author} />
+            <BlogAuthor authorId={post.authorId} />
             <BlogFeaturedImage title={post.title} slug={slug} />
             <BlogContent content={post.content} />
             <BlogCTA />

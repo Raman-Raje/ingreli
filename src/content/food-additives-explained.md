@@ -6,10 +6,7 @@ category: Health
 date: 2025-03-08
 readTime: 5 min read
 slug: food-additives-explained
-author:
-  name: Raman Shinde
-  role: Nutrition Specialist
-  avatar: ""
+authorId: rash
 ---
 
 

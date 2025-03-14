@@ -8,7 +8,6 @@ const Footer = () => {
 
   const handleSubscribe = () => {
     e.preventDefault();
-    console.log('Subscribed:', email);
     setEmail('');
   };
 

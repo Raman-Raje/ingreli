@@ -6,10 +6,7 @@ category: FoodTech
 date: 2025-01-10
 readTime: 7 min read
 slug: lab-grown-meat
-author:
-  name: Pankaj Patil
-  role: MD Nutrition
-  avatar: ""
+authorId: krpa
 ---
 
 ## Introduction: What is Lab-Grown Meat? 🤔
@@ -49,8 +46,6 @@ Then there’s the “yuck factor.” Will consumers embrace meat grown in a vat
 ## Future Outlook 🔮
 
 The future of *lab-grown meat* looks promising. Investors are pouring billions into the industry, with projections estimating a market worth $25 billion by 2030 💰. Regulatory approval is gaining traction too—Singapore became the first country to greenlight lab-grown chicken in 2020, and the U.S. and EU are close behind ✅. As technology improves and costs fall, we could see *sustainable protein* on supermarket shelves sooner than you think!
-
-**[Image Placeholder: A plate of lab-grown meat served as a burger, captioned: "Ready for your table?"]**
 
 ---
 

@@ -6,10 +6,7 @@ category: Nutrition
 date: 2024-12-20
 readTime: 8 min read
 slug: the-science-behind-personalized-nutrition
-author:
-  name: Chetan Parikh
-  role: Nutrition Specialist
-  avatar: ""
+authorId: chpa
 ---
 
 ## Introduction: What is Personalized Nutrition? 🧬

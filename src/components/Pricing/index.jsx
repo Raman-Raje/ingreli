@@ -49,7 +49,7 @@ const PricingSection = () => {
   const [isYearly, setIsYearly] = useState(false);
 
   return (
-    <section className="bg-white py-20 px-6">
+    <section id="pricing" className="bg-white py-20 px-6">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-2">Plans for Everyone</h2>
         <p className="text-lg text-center text-gray-600 mb-10">

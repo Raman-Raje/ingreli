@@ -1,4 +1,5 @@
 import React from 'react';
+import { contactMail, address } from '@/constants/categories';
 
 const PrivacyPolicy = () => (
   <section className="bg-green-50 py-20 px-6">
@@ -106,8 +107,8 @@ const PrivacyPolicy = () => (
             <>
               <p>If you have any questions about this Privacy Policy, please contact us at:</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Email:</strong> contact@ingreli.com</li>
-                <li><strong>Address:</strong> Medahalli, Bengaluru - 560049</li>
+                <li><strong>Email:</strong> {contactMail}</li>
+                <li><strong>Address:</strong> {address}</li>
               </ul>
             </>
           }

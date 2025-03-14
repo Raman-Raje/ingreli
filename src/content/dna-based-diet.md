@@ -6,10 +6,7 @@ category: Lifestyle
 date: 2025-02-15
 readTime: 5 min read
 slug: dna-based-diet
-author:
-  name: Pankaj Patil
-  role: MD (Nutrition & Dietetics)
-  avatar: ""
+authorId: rash
 ---
 
 ## Introduction: Understanding Nutrigenomics 🌟

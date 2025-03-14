@@ -1,3 +1,5 @@
+import { contactMail } from './categories';
+
 export const connect = [
     // social links
     { label: 'Instagram', path: '#' },
@@ -7,7 +9,7 @@ export const connect = [
   ];
 
   export const legal = [
-    { label: 'Contact', path: '/contact' },
+    { label: 'Contact', path: `mailto:${contactMail}` },
     { label: 'Privacy Policy', path: '/privacy-policy' },
     { label: 'Terms and Conditions', path: '/terms-and-conditions' },
   ];
