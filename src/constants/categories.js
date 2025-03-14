@@ -24,3 +24,5 @@ export const contentWriters = {
         role: 'Nutrition Specialist',
     },
 }
+
+export const baseUrl = 'https://www.ingreli.com';
