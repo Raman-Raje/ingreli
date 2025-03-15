@@ -112,7 +112,7 @@ const Footer = () => {
         </div>
       </div>
         {/* Bottom Bar */}
-        <div className="border-t border-[#0e4a45] pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-[#d3e5df]">
+        <div className="border-t border-[#0e4a45] pt-6 px-4 flex flex-col md:flex-row justify-between items-center text-sm text-[#d3e5df]">
           <p>
             © {new Date().getFullYear()} ingreli. All rights reserved.
           </p>
